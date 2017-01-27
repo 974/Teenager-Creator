@@ -1,0 +1,12 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @teenager.name
+p
+  strong Type:
+  = @teenager.type
+
+= link_to 'Edit', edit_teenager_path(@teenager)
+'|
+= link_to 'Back', teenagers_path

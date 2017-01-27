@@ -1,0 +1,23 @@
+h1 Listing teenagers
+
+table
+  thead
+    tr
+      th Name
+      th Type
+      th
+      th
+      th
+
+  tbody
+    - @teenagers.each do |teenager|
+      tr
+        td = teenager.name
+        td = teenager.type
+        td = link_to 'Show', teenager
+        td = link_to 'Edit', edit_teenager_path(teenager)
+        td = link_to 'Destroy', teenager, data: { confirm: 'Are you sure?' }, method: :delete
+
+br
+
+= link_to 'New Teenager', new_teenager_path
