@@ -2,8 +2,15 @@ class Teenager
   include Mongoid::Document
   field :name, type: String
   field :type, type: String
-  field :stats, type: Hash
-  field :powers, type: Array
+  field :smarts, type: Integer
+  field :rwp, type: Integer
+  field :smarts, type: Integer
+  field :driving, type: Integer
+  field :cool, type: Integer
+  field :bod, type: Integer
+  field :luck, type: Integer
+  field :looks, type: Integer
+  field :bonk, type: Array
   embeds_many :knacks
   field :traits, type: Array
   accepts_nested_attributes_for :knacks
