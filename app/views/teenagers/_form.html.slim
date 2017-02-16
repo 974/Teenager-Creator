@@ -12,4 +12,28 @@
   .field
     = f.label :type
     = f.text_field :type
+  .field
+    = f.label :smarts
+    = f.number_field :smarts, in: 1..6, step: 1
+  .field
+    = f.label :rwp
+    = f.number_field :rwp, in: 1..6, step: 1
+  .field
+    = f.label :driving
+    = f.number_field :driving, in: 1..6, step: 1
+  .field
+    = f.label :cool
+    = f.number_field :cool, in: 1..6, step: 1
+  .field
+    = f.label :bod
+    = f.number_field :bod, in: 1..6, step: 1
+  .field
+    = f.label :luck
+    = f.number_field :luck, in: 1..6, step: 1
+  .field
+    = f.label :looks
+    = f.number_field :looks, in: 1..6, step: 1
+  .field
+    = f.label :bonk
+    = f.number_field :bonk, in: 1..6, step: 1
   .actions = f.submit
